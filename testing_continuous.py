@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-layer_size = np.int32([62500, 32, 4])
+layer_size = np.int32([62500, 32, 16, 8, 4])
 neural = cv2.ANN_MLP()
 neural.create(layer_size)
 neural.load('mlp.xml')
